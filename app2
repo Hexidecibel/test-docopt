@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+mvn -q \
+  exec:java \
+  -Dexec.mainClass="net.hexi.App2" \
+  -Dexec.args="$(printf "'%s' " "${@:-}")"
